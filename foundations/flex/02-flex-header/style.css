@@ -1,6 +1,18 @@
-.header  {
+.header {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centra verticalmente logo y links */
+  padding: 10px 20px;  /* Le da espacio interno para que no toque los bordes */
+}
+
+ul {
+  display: flex;       /* ¡Ahora la lista es flex! Sus hijos (li) se alinean en fila */
+  list-style-type: none; /* Quitamos los puntitos */
+  margin: 0;           /* Reseteamos los márgenes por defecto del navegador */
+  padding: 0;          /* Reseteamos el padding por defecto */
+  gap: 16px;           /* Separación limpia y exacta entre cada botón */
 }
 
 .logo {
@@ -11,15 +23,13 @@
   padding: 4px 32px;
 }
 
-ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
-}
 
+
+/* Para que los enlaces tengan una separación interna bonita como botones */
 a {
   font-size: 22px;
   background: white;
-  padding: 8px;
-  /* this removes the line under the links */
   text-decoration: none;
+  padding: 4px 8px;    /* Espacio interno para que parezcan cajas */
+  color: blue;
 }
